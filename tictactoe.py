@@ -137,6 +137,14 @@ def game_play():
         print("    Enter Q to quit.")
         p1_choice = input("    ")
 
+        while p1_choice == p2_choice:
+            print("")
+            print("    ERROR! That space is already taken! Choose a vacant space.")
+            print("")
+            print(board)
+            print("")
+            p1_choice = input("    ")
+
         # Error handling for invalid entry
         while p1_choice != "0" and p1_choice != "1" and p1_choice != "2" and p1_choice != "3" and p1_choice != "4" and p1_choice != "5" and p1_choice != "6" and p1_choice != "7" and p1_choice != "8" and p1_choice != "R" and p1_choice != "r" and p1_choice != "Q" and p1_choice != "q":
             print("")
@@ -227,6 +235,14 @@ def game_play():
         print("    Enter R to restart.")
         print("    Enter Q to Quit.")
         p2_choice = input("    ")
+        while p2_choice == p1_choice:
+            print("")
+            print("    ERROR! That space is already taken! Choose a vacant space.")
+            print("")
+            print(board)
+            print("")
+            p2_choice = input("    ")
+
         while p2_choice != "0" and p2_choice != "1" and p2_choice != "2" and p2_choice != "3" and p2_choice != "4" and p2_choice != "5" and p2_choice != "6" and p2_choice != "7" and p2_choice != "8" and p2_choice != "Q" and p2_choice != "q" and p2_choice != "R" and p2_choice != "r":
             print("    ERROR: Invalid entry!")
             print("")
@@ -236,6 +252,7 @@ def game_play():
                   p2_XorO_choice.upper() + " and make your move.")
             print("")
             p2_choice = input("    ")
+
         if p2_choice == "Q" or p2_choice == "q":
             break
         elif p2_choice == "R" or p2_choice == "r":
