@@ -110,7 +110,7 @@ def game_continue_menu():
 
 def game_play():
 
-    board = "    0 1 2\n    3 4 5\n    6 7 8"
+    board = "    0 | 1 | 2\n   -----------\n    3 | 4 | 5\n   -----------\n    6 | 7 | 8"
     p1_wins = False
     p2_wins = False
     p1_choice = ""
@@ -169,53 +169,53 @@ def game_play():
 
         # Logic for determining winning sequences
         if p1_XorO_choice == "X":
-            if board[4] == "X" and board[14] == "X" and board[24] == "X":
+            if board[4] == "X" and board[33] == "X" and board[62] == "X":
                 p1_wins = True
                 break
-            elif board[6] == "X" and board[16] == "X" and board[26] == "X":
+            elif board[8] == "X" and board[37] == "X" and board[66] == "X":
                 p1_wins = True
                 break
-            elif board[8] == "X" and board[18] == "X" and board[28] == "X":
+            elif board[12] == "X" and board[41] == "X" and board[70] == "X":
                 p1_wins = True
                 break
-            elif board[4] == "X" and board[6] == "X" and board[8] == "X":
+            elif board[4] == "X" and board[8] == "X" and board[12] == "X":
                 p1_wins = True
                 break
-            if board[14] == "X" and board[16] == "X" and board[18] == "X":
+            if board[33] == "X" and board[37] == "X" and board[41] == "X":
                 p1_wins = True
                 break
-            elif board[24] == "X" and board[26] == "X" and board[28] == "X":
+            elif board[62] == "X" and board[66] == "X" and board[70] == "X":
                 p1_wins = True
                 break
-            elif board[4] == "X" and board[16] == "X" and board[28] == "X":
+            elif board[4] == "X" and board[37] == "X" and board[70] == "X":
                 p1_wins = True
                 break
-            elif board[8] == "X" and board[16] == "X" and board[24] == "X":
+            elif board[12] == "X" and board[37] == "X" and board[62] == "X":
                 p1_wins = True
                 break
         elif p1_XorO_choice == "O":
-            if board[4] == "O" and board[14] == "O" and board[24] == "O":
+            if board[4] == "O" and board[33] == "O" and board[62] == "O":
                 p1_wins = True
                 break
-            elif board[6] == "O" and board[16] == "O" and board[26] == "O":
+            elif board[8] == "O" and board[37] == "O" and board[66] == "O":
                 p1_wins = True
                 break
-            elif board[8] == "O" and board[18] == "O" and board[28] == "O":
+            elif board[12] == "O" and board[41] == "O" and board[70] == "O":
                 p1_wins = True
                 break
-            elif board[4] == "O" and board[6] == "O" and board[8] == "O":
+            elif board[4] == "O" and board[8] == "O" and board[12] == "O":
                 p1_wins = True
                 break
-            if board[14] == "O" and board[16] == "O" and board[18] == "O":
+            if board[33] == "O" and board[37] == "O" and board[41] == "O":
                 p1_wins = True
                 break
-            elif board[24] == "O" and board[26] == "O" and board[28] == "O":
+            elif board[62] == "O" and board[66] == "O" and board[70] == "O":
                 p1_wins = True
                 break
-            elif board[4] == "O" and board[16] == "O" and board[28] == "O":
+            elif board[4] == "O" and board[37] == "O" and board[70] == "O":
                 p1_wins = True
                 break
-            elif board[8] == "O" and board[16] == "O" and board[24] == "O":
+            elif board[12] == "O" and board[37] == "O" and board[62] == "O":
                 p1_wins = True
                 break
             print("")
@@ -262,53 +262,53 @@ def game_play():
 
         # Logic for determining winning sequences
         if p2_XorO_choice == "X":
-            if board[4] == "X" and board[14] == "X" and board[24] == "X":
+            if board[4] == "X" and board[33] == "X" and board[62] == "X":
                 p2_wins = True
                 break
-            elif board[6] == "X" and board[16] == "X" and board[26] == "X":
+            elif board[8] == "X" and board[37] == "X" and board[66] == "X":
                 p2_wins = True
                 break
-            elif board[8] == "X" and board[18] == "X" and board[28] == "X":
+            elif board[12] == "X" and board[41] == "X" and board[70] == "X":
                 p2_wins = True
                 break
-            elif board[4] == "X" and board[6] == "X" and board[8] == "X":
+            elif board[4] == "X" and board[8] == "X" and board[12] == "X":
                 p2_wins = True
                 break
-            if board[14] == "X" and board[16] == "X" and board[18] == "X":
+            if board[33] == "X" and board[37] == "X" and board[41] == "X":
                 p2_wins = True
                 break
-            elif board[24] == "X" and board[26] == "X" and board[28] == "X":
+            elif board[62] == "X" and board[66] == "X" and board[70] == "X":
                 p2_wins = True
                 break
-            elif board[4] == "X" and board[16] == "X" and board[28] == "X":
+            elif board[4] == "X" and board[37] == "X" and board[70] == "X":
                 p2_wins = True
                 break
-            elif board[8] == "X" and board[16] == "X" and board[24] == "X":
+            elif board[12] == "X" and board[37] == "X" and board[62] == "X":
                 p2_wins = True
                 break
         elif p2_XorO_choice == "O":
-            if board[4] == "O" and board[14] == "O" and board[24] == "O":
+            if board[4] == "O" and board[33] == "O" and board[62] == "X":
                 p2_wins = True
                 break
-            elif board[6] == "O" and board[16] == "O" and board[26] == "O":
+            elif board[8] == "O" and board[37] == "O" and board[66] == "X":
                 p2_wins = True
                 break
-            elif board[8] == "O" and board[18] == "O" and board[28] == "O":
+            elif board[12] == "O" and board[41] == "O" and board[70] == "X":
                 p2_wins = True
                 break
-            elif board[4] == "O" and board[6] == "O" and board[8] == "O":
+            elif board[4] == "O" and board[8] == "O" and board[12] == "X":
                 p2_wins = True
                 break
-            if board[14] == "O" and board[16] == "O" and board[18] == "O":
+            if board[33] == "O" and board[37] == "O" and board[41] == "X":
                 p2_wins = True
                 break
-            elif board[24] == "O" and board[26] == "O" and board[28] == "O":
+            elif board[62] == "O" and board[66] == "O" and board[70] == "X":
                 p2_wins = True
                 break
-            elif board[4] == "O" and board[16] == "O" and board[28] == "O":
+            elif board[4] == "O" and board[37] == "O" and board[70] == "X":
                 p2_wins = True
                 break
-            elif board[8] == "O" and board[16] == "O" and board[24] == "O":
+            elif board[12] == "O" and board[37] == "O" and board[62] == "X":
                 p2_wins = True
                 break
         print("")
